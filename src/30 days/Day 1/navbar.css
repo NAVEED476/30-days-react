@@ -8,15 +8,35 @@
     align-items: center;
     justify-content: space-between;
     padding: 0px 30px 0px 30px;
+    color: white;
 }
 
 
 .links ul{
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 20px;
+    margin: 5px;
+}
+.links ul Link{
+    text-decoration: none;
 }
 .links ul li{
-    text-decoration: none;
+    text-decoration: none !important;
     list-style: none;
+    color: white;
 }
+ .links ul li:hover{
+    background: black;
+    padding:5px;
+    border-radius: 8px;
+    text-transform: none;
+}
+
+.activeNavLink {
+    background: black;
+    padding: 5px;
+    border-radius: 8px;
+    text-decoration: overline;
+    /* Add any additional styles for active links here */
+  }
