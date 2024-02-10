@@ -15,7 +15,7 @@
 .links ul{
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 30px;
     margin: 5px;
 }
 .links ul Link{
@@ -27,16 +27,60 @@
     color: white;
 }
  .links ul li:hover{
-    background: black;
-    padding:5px;
+    color: aqua;
     border-radius: 8px;
     text-transform: none;
 }
 
-.activeNavLink {
+.active {
     background: black;
     padding: 5px;
     border-radius: 8px;
     text-decoration: overline;
-    /* Add any additional styles for active links here */
+  }
+
+  .menu{
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    width: 2.25rem;
+    height: 2rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .menu span{
+    height: 0.4rem;
+    width: 100%;
+    background: #fff;
+    border-radius: 0.2rem;
+  }
+
+  @media screen and (max-width:480px) {
+    .menu{
+        display: flex;
+    }
+    nav{
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 3rem;
+    }
+    .navbar-cont{
+        margin-bottom: 3rem;
+    }
+
+    .links ul{
+        flex-direction: column;
+        display: none;
+        
+    }
+    .links ul.open{
+        display: flex;
+    }
+    .links ul li{
+        color: black;
+        background: blue;
+    }
+
   }

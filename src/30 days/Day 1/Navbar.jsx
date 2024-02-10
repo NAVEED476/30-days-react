@@ -1,16 +1,24 @@
 // creating a responsive navbar
-import React from "react";
+import React,{useState} from "react";
 import "./navbar.css";
 import { Link } from "react-router-dom";
 import { NavLink } from "react-router-dom";
 const Navbar = () => {
+  const [isMenuOpen, setIsmenuOpen] = useState(false);
   return (
     <nav className="navbar-cont">
       <div className="logo">
         <h1>Logo</h1>
       </div>
+      <div className="menu" onClick={()=>{
+        setIsmenuOpen(!isMenuOpen)
+      }}>
+      <span></span>
+      <span></span>
+      <span></span>
+      </div>
       <div className="links">
-        <ul>
+        <ul className={isMenuOpen ? "open" : "" }>
           <NavLink
             to="/about"
             activeClassName="activeNavLink"
