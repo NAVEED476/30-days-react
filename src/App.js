@@ -7,6 +7,7 @@ import Contact from "./30 days/Day 1/components/Contact";
 import Skills from "./30 days/Day 1/components/Skills";
 import Signup from "./30 days/Day 1/components/Signup";
 import Counter from "./30 days/Day 2/React/Counter";
+import Users from "./30 days/Day 3/React/Users";
 
 
 function App() {
@@ -43,7 +44,8 @@ function App() {
   return (
     <div className="App">
      {/* <RouterProvider router={routes}/> */}
-     <Counter/>
+     {/* <Counter/> */}
+     <Users/>
     </div>
   );
 }
