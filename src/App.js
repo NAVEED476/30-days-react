@@ -6,41 +6,44 @@ import About from "./30 days/Day 1/components/About";
 import Contact from "./30 days/Day 1/components/Contact";
 import Skills from "./30 days/Day 1/components/Skills";
 import Signup from "./30 days/Day 1/components/Signup";
+import Counter from "./30 days/Day 2/React/Counter";
+
 
 function App() {
 
-  const routes = createBrowserRouter([
-    {
-      element:<NavbarRoutes/>,
-      children:[
-        {
-          path:"/",
-          element:<Home/>
-        },
-        {
-          path:"/about",
-          element:<About/>
-        },
-        {
-          path:"/contact",
-          element:<Contact/>
-        },
-        {
-          path:"/skills",
-          element:<Skills/>
-        },
+  // const routes = createBrowserRouter([
+  //   {
+  //     element:<NavbarRoutes/>,
+  //     children:[
+  //       {
+  //         path:"/",
+  //         element:<Home/>
+  //       },
+  //       {
+  //         path:"/about",
+  //         element:<About/>
+  //       },
+  //       {
+  //         path:"/contact",
+  //         element:<Contact/>
+  //       },
+  //       {
+  //         path:"/skills",
+  //         element:<Skills/>
+  //       },
 
-        {
-          path:"signup",
-          element:<Signup/>
-        }
-      ]
-    },
+  //       {
+  //         path:"signup",
+  //         element:<Signup/>
+  //       }
+  //     ]
+  //   },
     
-  ])
+  // ])
   return (
     <div className="App">
-     <RouterProvider router={routes}/>
+     {/* <RouterProvider router={routes}/> */}
+     <Counter/>
     </div>
   );
 }
