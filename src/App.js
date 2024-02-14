@@ -10,6 +10,7 @@ import Counter from "./30 days/Day 2/React/Counter";
 import Users from "./30 days/Day 3/React/Users";
 import PracticeUsers from "./30 days/Day 4/practice-react/PracticeUsers";
 import FetchData from "./30 days/Day 5/React/FetchData";
+import Listing from "./30 days/Day 6/React/Listing";
 
 
 function App() {
@@ -49,7 +50,8 @@ function App() {
      {/* <Counter/> */}
      {/* <Users/> */}
      {/* <PracticeUsers/> */}
-     <FetchData/>
+     {/* <FetchData/> */}
+     <Listing/>
     </div>
   );
 }
