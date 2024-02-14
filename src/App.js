@@ -8,6 +8,8 @@ import Skills from "./30 days/Day 1/components/Skills";
 import Signup from "./30 days/Day 1/components/Signup";
 import Counter from "./30 days/Day 2/React/Counter";
 import Users from "./30 days/Day 3/React/Users";
+import PracticeUsers from "./30 days/Day 4/practice-react/PracticeUsers";
+import FetchData from "./30 days/Day 5/React/FetchData";
 
 
 function App() {
@@ -45,7 +47,9 @@ function App() {
     <div className="App">
      {/* <RouterProvider router={routes}/> */}
      {/* <Counter/> */}
-     <Users/>
+     {/* <Users/> */}
+     {/* <PracticeUsers/> */}
+     <FetchData/>
     </div>
   );
 }
