@@ -11,6 +11,7 @@ import Users from "./30 days/Day 3/React/Users";
 import PracticeUsers from "./30 days/Day 4/practice-react/PracticeUsers";
 import FetchData from "./30 days/Day 5/React/FetchData";
 import Listing from "./30 days/Day 6/React/Listing";
+import InputComp from "./30 days/Day 7/React/InputComp"
 
 
 function App() {
@@ -51,7 +52,8 @@ function App() {
      {/* <Users/> */}
      {/* <PracticeUsers/> */}
      {/* <FetchData/> */}
-     <Listing/>
+     {/* <Listing/> */}
+     <InputComp/>
     </div>
   );
 }
